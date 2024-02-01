@@ -79,6 +79,14 @@ public class menuseleccionmodelo extends javax.swing.JPanel {
 
     private void buttonX5plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonX5plusActionPerformed
         // TODO add your handling code here:
+        tipodecabinaX5plus seleccioncabinaX5 = new tipodecabinaX5plus();
+        
+        JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
+        frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
+        frame.getContentPane().add(seleccioncabinaX5); // Agrega el panel tipodecabinaT3 al frame
+        frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
+        frame.setVisible(true); // Hac
+        
     }//GEN-LAST:event_buttonX5plusActionPerformed
 
     private void buttonX5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonX5ActionPerformed
