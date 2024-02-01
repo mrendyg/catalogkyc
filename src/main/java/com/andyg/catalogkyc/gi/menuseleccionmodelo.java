@@ -62,7 +62,7 @@ public class menuseleccionmodelo extends javax.swing.JPanel {
                     .addComponent(buttonX5plus, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonX5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonT3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(200, 200, 200))
+                .addContainerGap(200, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -83,16 +83,25 @@ public class menuseleccionmodelo extends javax.swing.JPanel {
 
     private void buttonX5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonX5ActionPerformed
         // TODO add your handling code here:
+        tipodecabinaX5 seleccioncabinaX5 = new tipodecabinaX5();
+        
+        JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
+        frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
+        frame.getContentPane().add(seleccioncabinaX5); // Agrega el panel tipodecabinaT3 al frame
+        frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
+        frame.setVisible(true); // Hac
+        
+        
     }//GEN-LAST:event_buttonX5ActionPerformed
 
     private void buttonT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonT3ActionPerformed
         // TODO add your handling code here:
-        tipodecabinaT3 seleccioncabina = new tipodecabinaT3();
+    tipodecabinaT3 seleccioncabinat3 = new tipodecabinaT3();
     
     // Se añade el panel tipodecabinaT3 al JFrame actual que contiene menuseleccionmodelo
     JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
     frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
-    frame.getContentPane().add(seleccioncabina); // Agrega el panel tipodecabinaT3 al frame
+    frame.getContentPane().add(seleccioncabinat3); // Agrega el panel tipodecabinaT3 al frame
     frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
     frame.setVisible(true); // Hac
         

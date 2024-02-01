@@ -1,4 +1,7 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ */
 package com.andyg.catalogkyc.gi;
 
 import javax.swing.JFrame;
@@ -8,12 +11,12 @@ import javax.swing.SwingUtilities;
  *
  * @author agarciao
  */
-public class tipodecabinaT3 extends javax.swing.JPanel {
+public class tipomotorX5dc extends javax.swing.JPanel {
 
     /**
-     * Creates new form tipodecabinaT3
+     * Creates new form tipomotorX5dc
      */
-    public tipodecabinaT3() {
+    public tipomotorX5dc() {
         initComponents();
     }
 
@@ -26,23 +29,13 @@ public class tipodecabinaT3 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonT3dc = new javax.swing.JButton();
-        buttonT3sc = new javax.swing.JButton();
+        button15 = new javax.swing.JButton();
+        button16 = new javax.swing.JButton();
         buttonAtras = new javax.swing.JButton();
 
-        buttonT3dc.setText("DC");
-        buttonT3dc.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonT3dcActionPerformed(evt);
-            }
-        });
+        button15.setText("1.5");
 
-        buttonT3sc.setText("SC");
-        buttonT3sc.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonT3scActionPerformed(evt);
-            }
-        });
+        button16.setText("1.6");
 
         buttonAtras.setText("Atras");
         buttonAtras.addActionListener(new java.awt.event.ActionListener() {
@@ -57,9 +50,9 @@ public class tipodecabinaT3 extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(200, Short.MAX_VALUE)
-                .addComponent(buttonT3dc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(button15, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 200, Short.MAX_VALUE)
-                .addComponent(buttonT3sc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(button16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(200, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -73,51 +66,29 @@ public class tipodecabinaT3 extends javax.swing.JPanel {
                 .addComponent(buttonAtras)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonT3dc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonT3sc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(button15, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(button16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(215, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAtrasActionPerformed
         // TODO add your handling code here:
-        menuseleccionmodelo menuprincipal = new menuseleccionmodelo();
+        tipodecabinaX5 seleccioncabinaX5 = new tipodecabinaX5();
     
         // Se añade el panel tipodecabinaT3 al JFrame actual que contiene menuseleccionmodelo
         JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
         frame.getContentPane().removeAll();
-        frame.getContentPane().add(menuprincipal);
+        frame.getContentPane().add(seleccioncabinaX5);
         frame.pack();
         frame.setVisible(true);
         
     }//GEN-LAST:event_buttonAtrasActionPerformed
 
-    private void buttonT3dcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonT3dcActionPerformed
-        // TODO add your handling code here:
-        tipomotorT3dc tipomotort3 = new tipomotorT3dc();
-        
-        JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
-        frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
-        frame.getContentPane().add(tipomotort3); // Agrega el panel tipodecabinaT3 al frame
-        frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
-        frame.setVisible(true);
-    }//GEN-LAST:event_buttonT3dcActionPerformed
-
-    private void buttonT3scActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonT3scActionPerformed
-        // TODO add your handling code here:
-        tipomotorT3sc tipomotort3 = new tipomotorT3sc();
-        
-        JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
-        frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
-        frame.getContentPane().add(tipomotort3); // Agrega el panel tipodecabinaT3 al frame
-        frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
-        frame.setVisible(true);
-    }//GEN-LAST:event_buttonT3scActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton button15;
+    private javax.swing.JButton button16;
     private javax.swing.JButton buttonAtras;
-    private javax.swing.JButton buttonT3dc;
-    private javax.swing.JButton buttonT3sc;
     // End of variables declaration//GEN-END:variables
 }
