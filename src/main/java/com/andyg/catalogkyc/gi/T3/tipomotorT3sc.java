@@ -1,5 +1,5 @@
 
-package com.andyg.catalogkyc.gi;
+package com.andyg.catalogkyc.gi.T3;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;

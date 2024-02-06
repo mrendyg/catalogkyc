@@ -1,6 +1,9 @@
 
 package com.andyg.catalogkyc.gi;
 
+import com.andyg.catalogkyc.gi.X5plus.tipodecabinaX5plus;
+import com.andyg.catalogkyc.gi.X5.tipodecabinaX5;
+import com.andyg.catalogkyc.gi.T3.tipodecabinaT3;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 

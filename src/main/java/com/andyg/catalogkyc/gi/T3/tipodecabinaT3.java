@@ -1,6 +1,7 @@
 
-package com.andyg.catalogkyc.gi;
+package com.andyg.catalogkyc.gi.T3;
 
+import com.andyg.catalogkyc.gi.menuseleccionmodelo;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
@@ -8,12 +9,12 @@ import javax.swing.SwingUtilities;
  *
  * @author agarciao
  */
-public class tipodecabinaX5 extends javax.swing.JPanel {
+public class tipodecabinaT3 extends javax.swing.JPanel {
 
     /**
-     * Creates new form tipodecabinaX5
+     * Creates new form tipodecabinaT3
      */
-    public tipodecabinaX5() {
+    public tipodecabinaT3() {
         initComponents();
     }
 
@@ -27,21 +28,21 @@ public class tipodecabinaX5 extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        buttonDC = new javax.swing.JButton();
-        buttonSC = new javax.swing.JButton();
+        buttonT3dc = new javax.swing.JButton();
+        buttonT3sc = new javax.swing.JButton();
         buttonAtras = new javax.swing.JButton();
 
-        buttonDC.setText("DC");
-        buttonDC.addActionListener(new java.awt.event.ActionListener() {
+        buttonT3dc.setText("DC");
+        buttonT3dc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonDCActionPerformed(evt);
+                buttonT3dcActionPerformed(evt);
             }
         });
 
-        buttonSC.setText("SC");
-        buttonSC.addActionListener(new java.awt.event.ActionListener() {
+        buttonT3sc.setText("SC");
+        buttonT3sc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSCActionPerformed(evt);
+                buttonT3scActionPerformed(evt);
             }
         });
 
@@ -58,11 +59,11 @@ public class tipodecabinaX5 extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(200, Short.MAX_VALUE)
-                .addComponent(buttonDC, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(buttonT3dc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 200, Short.MAX_VALUE)
-                .addComponent(buttonSC, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(buttonT3sc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(200, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(buttonAtras)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -74,8 +75,8 @@ public class tipodecabinaX5 extends javax.swing.JPanel {
                 .addComponent(buttonAtras)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonDC, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonSC, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonT3dc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonT3sc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(215, Short.MAX_VALUE))
         );
 
@@ -85,13 +86,13 @@ public class tipodecabinaX5 extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -105,36 +106,36 @@ public class tipodecabinaX5 extends javax.swing.JPanel {
         frame.getContentPane().add(menuprincipal);
         frame.pack();
         frame.setVisible(true);
+        
     }//GEN-LAST:event_buttonAtrasActionPerformed
 
-    private void buttonSCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSCActionPerformed
+    private void buttonT3dcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonT3dcActionPerformed
         // TODO add your handling code here:
-        tipomotorX5sc seleccionmotorx5sc = new tipomotorX5sc();
+        tipomotorT3dc tipomotort3 = new tipomotorT3dc();
         
         JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
         frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
-        frame.getContentPane().add(seleccionmotorx5sc); // Agrega el panel tipodecabinaT3 al frame
+        frame.getContentPane().add(tipomotort3); // Agrega el panel tipodecabinaT3 al frame
         frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
         frame.setVisible(true);
-    }//GEN-LAST:event_buttonSCActionPerformed
+    }//GEN-LAST:event_buttonT3dcActionPerformed
 
-    private void buttonDCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDCActionPerformed
+    private void buttonT3scActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonT3scActionPerformed
         // TODO add your handling code here:
-        tipomotorX5dc seleccionmotorx5dc = new tipomotorX5dc();
+        tipomotorT3sc tipomotort3 = new tipomotorT3sc();
         
         JFrame frame = (JFrame)SwingUtilities.getWindowAncestor(this);
         frame.getContentPane().removeAll(); // Elimina todos los componentes del frame
-        frame.getContentPane().add(seleccionmotorx5dc); // Agrega el panel tipodecabinaT3 al frame
+        frame.getContentPane().add(tipomotort3); // Agrega el panel tipodecabinaT3 al frame
         frame.pack(); // Ajusta el tamaño del frame según los componentes añadidos// Coloca el frame en el centro de la pantalla
         frame.setVisible(true);
-        
-    }//GEN-LAST:event_buttonDCActionPerformed
+    }//GEN-LAST:event_buttonT3scActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonAtras;
-    private javax.swing.JButton buttonDC;
-    private javax.swing.JButton buttonSC;
+    private javax.swing.JButton buttonT3dc;
+    private javax.swing.JButton buttonT3sc;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
